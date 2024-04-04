@@ -1,9 +1,9 @@
 "use client"
 import React from 'react'
-import heroImage from "../public/hero.svg"
+import heroImage from "../public/hero.webp"
 import Image from 'next/image'
 import { Saira, Barlow } from 'next/font/google'
-const FG = Saira({subsets: ['latin'], weight: ['700']})
+const SairaF = Saira({subsets: ['latin'], weight: ['700']})
 const BarlowF = Barlow({subsets: ['latin'], weight: ['500']})
 import gsap from "gsap"
 import {useGSAP} from "@gsap/react";
@@ -25,21 +25,21 @@ const Hero = () => {
     }, [])
 
   return (
-    <div className='w-full h-full'>
-        <div className='absolute z-[-1] w-[30em] sm:w-[50em] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
+    <div className='h-[100vh] w-full'>
+        <div className='absolute z-[0] w-[100%] sm:w-[50%] top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'>
             <Image id='hero_image'  src={heroImage} alt='hero'/>
         </div>
-        <div className='pl-[1em] absolute bottom-12 sm:bottom-0 sm:relative sm:flex sm:flex-col sm:justify-center sm:mt-[5em] sm:items-center'>
-            <div className={`text-[#3A3733] uppercase text-4xl sm:text-9xl font-bold ${FG.className}`}>
-                <span className='block overflow-hidden '>
-                    <span id='greeting' className='block tracking-tight'>Hi There, I&apos;m</span>
+        <div className='pl-[1em] absolute bottom-12 sm:bottom-0 sm:relative sm:flex sm:flex-col sm:justify-center sm:pt-[5em] sm:items-center'>
+            <div className={`text-[#3A3733] uppercase font-bold text-4xl xl:text-9xl lg:text-7xl sm:text-5xl ${SairaF.className}`}>
+                <span className='block overflow-hidden'>
+                    <span id='greeting' className='block tracking-tight '>Hi There, I&apos;m</span>
                 </span>
                 <span className='block overflow-hidden'>
                     <span id='name' className='sm:ml-3 block tracking-tight'>Abhishek Babbar.</span>
                 </span>
             </div>
-            <div className='text-[#777777] w-[95%] sm:w-[35%] sm:text-center font-medium sm:text-2xl mt-2 sm:mt-7'>
-                <p id='subtext' className={`${BarlowF.className}`}>A freelance frontend developer & web designer propelling startup visions to reality.</p>
+            <div className='text-[#777777] sm:w-[35%] sm:text-center font-medium text-sm xl:text-xl lg:text-lg sm:text-sm mt-2 sm:mt-7'>
+                <p id='subtext' className={`${BarlowF.className}`}>A software developer engineer II @ Urban company & developer who think ahead of the curve.</p>
             </div>
         </div>
     </div>
