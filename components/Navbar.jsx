@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaLinkedin, FaGithubSquare, FaEnvelope } from "react-icons/fa";
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 const Navbar = () => {  
   const ref = useRef(null)
   useEffect(() => {
@@ -25,14 +26,18 @@ const Navbar = () => {
     ref.current.addEventListener('mousemove', mouseMove);
     ref.current.addEventListener('mouseleave', mouseLeave);
 
-    return () => {
-      ref.current.removeEventListener('mousemove', mouseMove);
-      ref.current.removeEventListener('mouseleave', mouseLeave);
-    }
+    // return () => {
+    //   ref.current.removeEventListener('mousemove', mouseMove);
+    //   ref.current.removeEventListener('mouseleave', mouseLeave);
+    // }
   }, [])
 
+  useGSAP(() => {
+    gsap.from("#nav", {y: -100, duration: 1.5, delay:1, ease: "expo.out"})
+  },[])
+
   return (
-    <nav  className='flex justify-between items-center px-[2em] sm:px-[5em]'>
+    <nav id='nav' className='flex justify-between items-center px-[2em] sm:px-[5em]'>
         <Image ref={ref} className='relative bottom-2 right-4 sm:bottom-0 sm:right-0 sm:w-[9em]' src={logo} alt='logo' width={100} height={100} />
         <div className='text-[#777777] flex justify-center items-center gap-8'>
             <Link href='/' className='text-xl sm:text-2xl'><FaLinkedin /></Link>
