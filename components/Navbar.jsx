@@ -26,10 +26,6 @@ const Navbar = () => {
     ref.current.addEventListener('mousemove', mouseMove);
     ref.current.addEventListener('mouseleave', mouseLeave);
 
-    // return () => {
-    //   ref.current.removeEventListener('mousemove', mouseMove);
-    //   ref.current.removeEventListener('mouseleave', mouseLeave);
-    // }
   }, [])
 
   useGSAP(() => {
@@ -37,7 +33,7 @@ const Navbar = () => {
   },[])
 
   return (
-    <nav id='nav' className=' flex justify-between items-center px-[2em] sm:px-[5em]'>
+    <nav id='nav' className=' flex justify-between items-center px-[2em] sm:px-[2em]'>
         <Image ref={ref} className='relative bottom-2 right-4 sm:bottom-0 sm:right-0 sm:w-[9em]' src={logo} alt='logo' width={100} height={100} />
         <div className='text-[#777777] flex justify-center items-center gap-8'>
             <Link href='/' className='text-xl sm:text-2xl'><FaLinkedin /></Link>

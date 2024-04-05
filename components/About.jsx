@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Saira } from 'next/font/google'
 const SairaF = Saira({subsets: ['latin'], weight: ['700']})
-import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 const About = () => {
 
   return (
-    <div className='h-[100vh]'>
+    <div className='w-full h-[100vh] relative z-[1] rounded-t-3xl bg-[#080807] top-[100vh]'>
       <div className='ml-[5em]'>
         <span className='block overflow-hidden'>
-          <span className={`block ${SairaF.className} uppercase text-[#3A3733] text-8xl`}>A little bit</span>
+          <span className={`block ${SairaF.className} uppercase text-[#d1d1c7] text-8xl`}>A little bit</span>
         </span>
         <span className='block overflow-hidden '>
-          <span className={`block ${SairaF.className} uppercase text-[#3A3733] ml-5 text-8xl`}>About me.</span>
+          <span className={`block ${SairaF.className} uppercase text-[#d1d1c7] ml-5 text-8xl`}>About me.</span>
         </span>
       </div>
     </div>
