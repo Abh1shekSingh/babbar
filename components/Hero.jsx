@@ -44,7 +44,7 @@ const Hero = () => {
     }, [])
 
   return (
-    <div className='fixed h-[100vh] w-full'>
+    <section className='fixed h-[100vh] w-full'>
         <div className='absolute  z-[0] w-[100%] sm:w-[50%] top-[30%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
             <Image id='hero_image' src={heroImage} alt='hero'/>
         </div>
@@ -82,7 +82,7 @@ const Hero = () => {
                 <p id='subtext' className={`${BarlowF.className}`}>A software developer engineer II @ Urban Company & developer who think ahead of the curve.</p>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
