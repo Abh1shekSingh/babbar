@@ -6,7 +6,7 @@ const Animation = (props) => {
     const ref = `.${props.className}`
     useGSAP(() => {
         gsap.from(ref, {
-            y: 100,
+            y: 120,
             duration: 1,
             stagger: {
                 amount: 0.8,

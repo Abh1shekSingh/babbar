@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <>
-      <Loader />
+      {/* <Loader /> */}
       <header>
         <Navbar />
       </header>

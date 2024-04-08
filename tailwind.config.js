@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     colors : {
-      'light' : '#DBD6CB',
-      'dark' : '#171717',
-    }
+      'light' : '#FBF5F3',
+      'dark' : '#232C33',
+    },
     
   },
   plugins: [],

@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       
-      <body className="bg-accent-200">{children}</body>
+      <body className="bg-light">{children}</body>
     </html>
   );
 }

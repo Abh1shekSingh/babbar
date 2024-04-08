@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from 'react'
-import logo from "../public/logo.svg"
+import logo from "../public/images/logo.svg"
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaLinkedin, FaGithubSquare, FaEnvelope } from "react-icons/fa";
@@ -34,8 +34,8 @@ const Navbar = () => {
 
   return (
     <nav id='nav' className=' flex justify-between items-center px-[2em] sm:px-[2em]'>
-        <Image ref={ref} className='relative bottom-2 right-4 sm:bottom-0 sm:right-0 sm:w-[9em]' src={logo} alt='logo' width={100} height={100} />
-        <div className='text-[#777777] flex justify-center items-center gap-8'>
+        <Image ref={ref} className='scale-125 relative bottom-2 right-4 sm:bottom-0 sm:right-0 sm:w-[9em]' src={logo} alt='logo' width={100} height={100} />
+        <div className='text-dark flex  justify-end items-end gap-8'>
             <Link href='/' className='text-xl sm:text-2xl'><FaLinkedin /></Link>
             <Link href='/' className='text-xl sm:text-2xl'><FaGithubSquare /></Link>
             <Link href='/' className='text-xl sm:text-2xl'><FaEnvelope /></Link>
