@@ -3,6 +3,10 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { useEffect } from "react";
 import About from "@/components/About";
+import Achievements from "@/components/Achievements";
+import Footer from "@/components/Footer";
+import Loader from "@/components/Loader";
+
 export default function Home() {
   useEffect( () => {
     (
@@ -13,13 +17,26 @@ export default function Home() {
     )()
   }, [])
 
+ 
+
   return (
-    <div>
-      <Navbar />
+    <>
+      <Loader />
+      <header>
+        <Navbar />
+      </header>
       <main>
         <Hero />
-        <About />
+        <div className="w-full min-h-screen relative z-20">
+          <About />
+          <Achievements />  
+        </div>
+        <Footer />
+        <div className="mt-32 flex w-full flex-col px-6 sm:px-[4%] 3xl:px-[10%] justify-center items-center text-3xl">
+          <p>Get Sex Soon</p>
+        </div>
       </main>
-    </div>
+    </>
   );
 }
+
