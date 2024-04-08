@@ -27,7 +27,6 @@ const Hero = () => {
         start: "center center",
         end: "center top",
         scrub: true,
-        markers: true,
       },
       y: -100,
       opacity:0,

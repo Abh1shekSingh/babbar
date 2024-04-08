@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Achievements from "@/components/Achievements";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   useEffect( () => {
@@ -29,6 +30,7 @@ export default function Home() {
         <Hero />
         <div className="w-full min-h-screen relative z-20">
           <About />
+          {/* <Experience />   */}
           <Achievements />  
         </div>
         <Footer />
