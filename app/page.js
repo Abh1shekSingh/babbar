@@ -2,11 +2,12 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { useEffect } from "react";
-import About from "@/components/About";
-import Achievements from "@/components/Achievements";
+import Achievements from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import Experience from "@/components/Experience";
+import Showcase from "@/components/Showcase";
+import About from "@/components/About";
 
 export default function Home() {
   useEffect( () => {
@@ -29,8 +30,9 @@ export default function Home() {
       <main>
         <Hero />
         <div className="w-full min-h-screen relative z-20">
+          <Showcase />
+          <Experience />  
           <About />
-          <Achievements />  
         </div>
         <Footer />
         <div className="mt-32 flex w-full flex-col px-6 sm:px-[4%] 3xl:px-[10%] justify-center items-center text-3xl">

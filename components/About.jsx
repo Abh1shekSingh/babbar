@@ -1,66 +1,25 @@
 import React from 'react'
 import Animation from './Animation'
-import Link from 'next/link'
+import { Sora } from 'next/font/google'
 import Image from 'next/image'
-import leetcode from '../public/images/Leetcode-babbar.png'
-import codeforces from "../public/images/Codeforce_babbar.png"
-import kickstart from "../public/images/kickstart_babbar.png"
-import { Montserrat,Sora, Roboto } from 'next/font/google'
-const montserrat = Sora({subsets: ['latin'], weights: [400, 500, 600, 700]})
-const roboto = Roboto({subsets: ['latin'], weight: '500'})
-
+import babbar from "../public/images/Babbar.png"
+const sora = Sora({subsets:['latin'], weights:[400, 500, 600, 700]})
 const About = () => {
-  const work = [...("Showcase.")];
+    const heading = [...("To Know Me.")]
   return (
-    <section id='about' className='p-7 sm:p-24 w-full z-2 min-h-screen bg-dark rounded-t-3xl '>
-      <div>
-        <h2 className={`uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${montserrat.className}`}>
-          <Animation word = {work} className = "work" />
-        </h2>
-      </div>
-      <div className='xl:gap-x-18 grid pt-12 grid-cols-1 gap-y-10 pb-20 md:grid-cols-12 md:gap-y-20 2xl:gap-x-20 3xl:gap-x-24'>
-        <div className='col-span-7'>
-          <Link href='/'>
-            <div className='mb-4 overflow-hidden mx-auto rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={leetcode} alt='leetcode'/>
+    <section id='about' className='p-7 sm:p-24 w-full bg-dark z-2 min-h-screen rounded-b-3xl'>
+        <div className='relative'>
+            <h2 className={`mix-blend-exclusion uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${sora.className}`}>
+                <Animation word={heading} classname="about" />
+            </h2>
+            <div className='pointer-events-none relative z-0 mx-auto w-full overflow-hidden sm:max-w-sm  2xl:max-w-lg 3xl:max-w-xl'>
+                <Image src={babbar} alt="author" width={500} height={500} className=' aspect-auto w-full rounded object-cover grayscale sm:mx-auto  2xl:rounded-2xl' />
+                <div className=' absolute top-0 h-full w-full rounded bg-gradient-to-t from-dark to-transparent opacity-80 xl:opacity-75 2xl:rounded-2xl'></div>
             </div>
-            <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>DTU FEC</h3>
-            </div>
-          </Link>
         </div>
-        <div className='xl:col-span-5 col-span-7 xl:pt-[5rem]'>
-          <Link href='/'>
-            <div className='mb-4 overflow-hidden rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={codeforces} alt='leetcode' layout='responsive'  />
-            </div>
-            <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>Cryptochat</h3>
-            </div>
-          </Link>
-        </div>
-        <div className='xl:col-span-5  xl:pt-[5rem]'>
-          <Link href='/'>
-            <div className='mb-4 overflow-hidden rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={kickstart} alt='leetcode' layout='responsive'  />
-            </div>
-            <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>URL Shortner</h3>
-            </div>
-          </Link>
-        </div>
-        <div className='col-span-7 '>
-          <Link href='/'>
-            <div className='mb-4 overflow-hidden rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={codeforces} alt='leetcode' layout='responsive' />
-            </div>
-            <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>Leetcode</h3>
-            </div>
-          </Link>
-        </div>
-        
-      </div>
+        <p className='relative  -mt-8 flex w-full items-end justify-end text-xl font-medium text-light sm:-mt-12 xl:text-3xl'>
+            <span className='max-w-[44ch]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim Cras mattis rutrum arcu, ut fringilla nibh mattis vitae. Pellentesque blandit bibendum tempus. Sed sit amet vestibulum massa, in fermentum odio</span>
+        </p>
     </section>
   )
 }
