@@ -30,7 +30,6 @@ export default function Home() {
         <Hero />
         <div className="w-full min-h-screen relative z-20">
           <About />
-          {/* <Experience />   */}
           <Achievements />  
         </div>
         <Footer />

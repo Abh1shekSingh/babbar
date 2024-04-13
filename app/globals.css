@@ -4,5 +4,30 @@
 
 body {
   overflow-x: hidden;
-  background-color: #e1e1db;
+  /* background-color: #e1e1db;
+  background-image: url('/images/nnnoise.svg');
+  background-size: contain;
+  background-repeat: repeat; */
 }
+
+/* #about, .black-portion {
+  background-image: url('/images/nnnoise-black.svg');
+  background-size: contain;
+  background-repeat: repeat;
+} */
+
+#one {
+  top: calc(20vh + 0em);
+  margin-bottom:17.25em ;
+}
+
+#two {
+  top: calc(20vh + 5em);
+  margin-bottom:11.25em ;
+}
+
+#three {
+  top: calc(20vh + 10em);
+  margin-bottom:5.25em ;
+}
+

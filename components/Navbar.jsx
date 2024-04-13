@@ -33,7 +33,7 @@ const Navbar = () => {
   },[])
 
   return (
-    <nav id='nav' className=' flex justify-between items-center px-[2em] sm:px-[2em]'>
+    <nav id='nav' className='bg-[#F6F6F4] flex justify-between items-center px-[2em] sm:px-[2em]'>
         <Image ref={ref} className='scale-125 relative bottom-2 right-4 sm:bottom-0 sm:right-0 sm:w-[9em]' src={logo} alt='logo' width={100} height={100} />
         <div className='text-dark flex  justify-end items-end gap-8'>
             <Link href='/' className='text-xl sm:text-2xl'><FaLinkedin /></Link>

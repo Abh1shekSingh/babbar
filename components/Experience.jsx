@@ -1,15 +1,15 @@
 import React from 'react'
 import Animation from './Animation'
-import { Montserrat, Roboto } from 'next/font/google'
-const montserrat = Montserrat({subsets: ['latin'], weights: [400, 500, 600, 700]})
-const roboto = Roboto({subsets: ['latin'], weight: '400'})
+import { Manrope, Sora } from 'next/font/google'
+const montserrat = Sora({subsets: ['latin'], weights: [400, 500, 600, 700]})
+const roboto = Manrope({subsets: ['latin'], weight: '400'})
 
 const Experience = () => {
     const heading = [...("Experience.")];
   return (
     <section className='p-14 sm:p-24 bg-dark'>
         <div className='flex w-full flex-col gap-x-20 gap-y-2 lg:grid lg:grid-cols-12 xl:gap-y-3 2xl:gap-y-4'>
-            <h2 className={`text-[40px] sm:text-7xl duration-500 xs:text-4xl col-span-6 text-light uppercase font-bold ${montserrat.className}`}>
+            <h2 className={`uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${montserrat.className}`}>
                 <Animation word = {heading} className = "experience" />
             </h2>
             <p className={`col-span-12 max-w-[40ch] duration-500 text-xl xl:text-2xl pl-1 font-regular lg:col-span-6 text-light ${roboto.className}`}>
