@@ -4,17 +4,9 @@
 
 body {
   overflow-x: hidden;
-  /* background-color: #e1e1db;
-  background-image: url('/images/nnnoise.svg');
-  background-size: contain;
-  background-repeat: repeat; */
+  background-color: #F6F6F4;
 }
 
-/* #about, .black-portion {
-  background-image: url('/images/nnnoise-black.svg');
-  background-size: contain;
-  background-repeat: repeat;
-} */
 
 #one {
   top: calc(20vh + 0em);

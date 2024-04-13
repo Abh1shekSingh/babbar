@@ -22,7 +22,7 @@ const Showcase = () => {
         <div className='col-span-7'>
           <Link href='/'>
             <div className='mb-4 overflow-hidden mx-auto rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={leetcode} alt='leetcode'/>
+              <Image src={leetcode} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110'/>
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
               <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>DTU FEC</h3>
@@ -32,7 +32,7 @@ const Showcase = () => {
         <div className='xl:col-span-5 col-span-7 xl:pt-[5rem]'>
           <Link href='/'>
             <div className='mb-4 overflow-hidden rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={codeforces} alt='leetcode' layout='responsive'  />
+              <Image src={codeforces} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110' />
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
               <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>Cryptochat</h3>
@@ -42,7 +42,7 @@ const Showcase = () => {
         <div className='xl:col-span-5  xl:pt-[5rem]'>
           <Link href='/'>
             <div className='mb-4 overflow-hidden rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={kickstart} alt='leetcode' layout='responsive'  />
+              <Image src={kickstart} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110' />
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
               <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>URL Shortner</h3>
@@ -52,7 +52,7 @@ const Showcase = () => {
         <div className='col-span-7 '>
           <Link href='/'>
             <div className='mb-4 overflow-hidden rounded transition-all duration-300 hover:rounded-xl xl:mb-5 2xl:mb-6 3xl:mb-7 '>
-              <Image src={codeforces} alt='leetcode' layout='responsive' />
+              <Image src={codeforces} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110' />
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
               <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>Leetcode</h3>

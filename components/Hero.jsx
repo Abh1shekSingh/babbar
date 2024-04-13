@@ -36,11 +36,11 @@ const Hero = () => {
   },[])
   return (
     <section id='hero' className='bg-[#f6f6f4] mb-[-100svh] py-0'>
-        <div className='p-7 sticky h-svh top-0 z-90 w-full text-5xl  flex items-end sm:items-center justify-center bg-slate-500'>
+        <div className='p-7 sticky h-svh top-0 z-90 w-full text-5xl  flex items-end sm:items-center justify-center'>
             <Image className='absolute top-16 sm:top-0 w-7/8 sm:w-3/5 lg:w-2/5 z-0' src={circleSVG} alt='circle' width={400} height={400} />
             <div className='relative z-10 w-full'>
               <div className='text_wrapper flex flex-col justify-center items-start gap-y-3 relative bottom-24 sm:items-center sm:gap-y-8'>
-                <h1 className={`relative flex w-full flex-col  whitespace-nowrap text-[40px] font-bold uppercase leading-tighter text-dark duration-500 xs:text-lg sm:text-9xl ${sora.className}`}>
+                <h1 className={`relative flex w-full flex-col  whitespace-nowrap text-[40px] font-bold uppercase leading-tighter text-[#2d2926] duration-500 xs:text-lg sm:text-9xl ${sora.className}`}>
                   <span className='flex-col flex sm:pl-[13%] 2xl:pl-[16%] 4xl:pl-[21%]'>
                     <Animation word = {greet} className = "greet"/>
                   </span>

@@ -17,7 +17,7 @@ const About = () => {
                 <div className=' absolute top-0 h-full w-full rounded bg-gradient-to-t from-dark to-transparent opacity-80 xl:opacity-75 2xl:rounded-2xl'></div>
             </div>
         </div>
-        <p className='relative  -mt-8 flex w-full items-end justify-end text-xl font-medium text-light sm:-mt-12 xl:text-3xl'>
+        <p className='relative opacity-80 -mt-8 flex w-full items-end justify-end text-xl font-medium text-light sm:-mt-12 xl:text-3xl'>
             <span className='max-w-[44ch]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim Cras mattis rutrum arcu, ut fringilla nibh mattis vitae. Pellentesque blandit bibendum tempus. Sed sit amet vestibulum massa, in fermentum odio</span>
         </p>
     </section>

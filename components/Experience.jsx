@@ -33,7 +33,7 @@ const Experience = () => {
           <h2 className={`sm:col-span-12 md:col-span-6 uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${sora.className}`}>
             <Animation word = {heading} className = "achievements" />
           </h2>
-          <p className={`sm:col-span-12 md:col-span-6 text-light text-lg xl:text-4xl ${manrope.className}`}>Here's my journey in the field of software engineering.</p>
+          <p className={`sm:col-span-12 md:col-span-6 text-light text-lg xl:text-4xl opacity-80 ${manrope.className}`}>Here's my journey in the field of software engineering.</p>
         </div>
         <div className='mt-12 w-full'>
           <div className='mt-12 flex flex-col justify-between gap-y-16'>
@@ -42,7 +42,7 @@ const Experience = () => {
                 <h3 className={`py-7 text-left text-2xl font-bold text-light sm:py-6  sm:text-3xl md:py-5 md:text-4xl lg:text-5xl  3xl:py-6 ${sora.className}`}>Digital Register</h3>
               </div>
               <div className='relative flex min-h-[20vh] flex-col place-items-start gap-x-20 pb-12 lg:grid lg:grid-cols-12 '>
-                <p className={`${manrope.className} col-span-12 max-w-[40ch] pt-2 text-light text-lg font-medium md:text-lg lg:col-span-6 2xl:text-xl`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim</p>
+                <p className={`${manrope.className} opacity-80 col-span-12 max-w-[40ch] pt-2 text-light text-lg font-medium md:text-lg lg:col-span-6 2xl:text-xl`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim</p>
                 <span className='absolute bottom-0 -z-10 flex  w-full items-end justify-end  text-9xl font-extrabold leading-tighter text-light opacity-50 '>01</span>
               </div>
             </div>
@@ -51,7 +51,7 @@ const Experience = () => {
                 <h3 className={`py-7 text-left text-2xl font-bold text-light sm:py-6  sm:text-3xl md:py-5 md:text-4xl lg:text-5xl  3xl:py-6 ${sora.className}`}>365 Labs</h3>
               </div>
               <div className='relative flex min-h-[20vh] flex-col place-items-start gap-x-20 pb-12 lg:grid lg:grid-cols-12 '>
-                <p className={`${manrope.className} col-span-12 max-w-[40ch] pt-2 text-light text-lg font-medium md:text-lg lg:col-span-6 2xl:text-xl`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim</p>
+                <p className={`${manrope.className} opacity-80 col-span-12 max-w-[40ch] pt-2 text-light text-lg font-medium md:text-lg lg:col-span-6 2xl:text-xl`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim</p>
                 <span className='absolute bottom-0 -z-10 flex  w-full items-end justify-end  text-9xl font-extrabold leading-tighter text-light opacity-50 '>02</span>
               </div>
             </div>
@@ -60,7 +60,7 @@ const Experience = () => {
                 <h3 className={`py-7 text-left text-2xl font-bold text-light sm:py-6  sm:text-3xl md:py-5 md:text-4xl lg:text-5xl  3xl:py-6 ${sora.className}`}>Urban Company</h3>
               </div>
               <div className='relative flex min-h-[20vh] flex-col place-items-start gap-x-20 pb-12 lg:grid lg:grid-cols-12 '>
-                <p className={`${manrope.className} col-span-12 max-w-[40ch] pt-2 text-light text-lg font-medium md:text-lg lg:col-span-6 2xl:text-xl`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim</p>
+                <p className={`${manrope.className} opacity-80 col-span-12 max-w-[40ch] pt-2 text-light text-lg font-medium md:text-lg lg:col-span-6 2xl:text-xl`}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut hendrerit nulla, sed fringilla purus. Aenean quis est eu lacus feugiat semper sed ut turpis. In nec nisl enim</p>
                 <span className='absolute bottom-0 -z-10 flex  w-full items-end justify-end  text-9xl font-extrabold leading-tighter text-light opacity-50 '>03</span>
               </div>
             </div>
