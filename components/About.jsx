@@ -54,7 +54,7 @@ const About = () => {
                 <Animation word={heading} className="about" />
             </h2>
             <div className='pointer-events-none relative z-0 mx-auto w-full overflow-hidden sm:max-w-sm  2xl:max-w-lg 3xl:max-w-xl'>
-                <Image src={babbar} alt="author" width={500} height={500} className=' aspect-auto w-full rounded object-cover grayscale sm:mx-auto  2xl:rounded-2xl' />
+                <Image src={babbar} alt="author" width={500} height={500} loading='lazy' className=' aspect-auto w-full rounded object-cover grayscale sm:mx-auto  2xl:rounded-2xl' />
                 <div className=' absolute top-0 h-full w-full rounded bg-gradient-to-t from-dark to-transparent opacity-80 xl:opacity-75 2xl:rounded-2xl'></div>
             </div>
         </div>

@@ -36,7 +36,8 @@ export default function Home() {
         </div>
         <Coding />
       </main>
-      <footer>
+      <footer className="relative">
+        
         <Footer />
       </footer>
     </>

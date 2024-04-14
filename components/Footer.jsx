@@ -1,10 +1,13 @@
 import React from 'react'
 import { Manrope, Poppins } from 'next/font/google'
+import Image from 'next/image'
+import grid from "../public/images/sssplatter.svg"
 const poppins = Poppins({subsets:['latin'], weight:['700']})
 const manrope = Manrope({subsets:['latin'], weight:'400'})
 const Footer = () => {
   return (
     <section className='p-7 md:pl-24 md:pr-24 md:pt-24 md:pb-7 min-h-[20vh]'>
+        <Image src={grid} alt='gridbackground image' loading='lazy' className='absolute opacity-30 bottom-0 z-[-3] left-1/2 h-fit  w-3/5 -translate-x-1/2 2xl:w-[600px]' width={400} height={400}/>
         <div className='grid grid-cols-1 md:grid-cols-12 gap-x-4 gap-y-4'>
             <div className='col-span-6'>
                 <h2 className={` ${poppins.className} border-b border-b-dark text-xl md:text-2xl text-dark font-bold`}>Navigation</h2>
