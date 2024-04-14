@@ -5,16 +5,16 @@ import Image from 'next/image'
 import leetcode from '../public/images/Leetcode-babbar.png'
 import codeforces from "../public/images/Codeforce_babbar.png"
 import kickstart from "../public/images/kickstart_babbar.png"
-import { Montserrat,Sora, Roboto } from 'next/font/google'
-const montserrat = Sora({subsets: ['latin'], weights: [400, 500, 600, 700]})
-const roboto = Roboto({subsets: ['latin'], weight: '500'})
+import { Poppins, Manrope } from 'next/font/google'
+const poppins = Poppins({subsets: ['latin'], weight: ['700']})
+const manrope = Manrope({subsets: ['latin'], weight: '600'})
 
 const Showcase = () => {
   const work = [...("Showcase.")];
   return (
     <section id='about' className='p-7 sm:p-24 w-full z-2 min-h-screen bg-dark rounded-t-3xl '>
       <div>
-        <h2 className={`uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${montserrat.className}`}>
+        <h2 className={`uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${poppins.className}`}>
           <Animation word = {work} className = "work" />
         </h2>
       </div>
@@ -25,7 +25,7 @@ const Showcase = () => {
               <Image src={leetcode} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110'/>
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>DTU FEC</h3>
+              <h3 className={`w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl ${manrope.className}`}>DTU FEC</h3>
             </div>
           </Link>
         </div>
@@ -35,7 +35,7 @@ const Showcase = () => {
               <Image src={codeforces} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110' />
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>Cryptochat</h3>
+              <h3 className={`w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl ${manrope.className}`}>Cryptochat</h3>
             </div>
           </Link>
         </div>
@@ -45,7 +45,7 @@ const Showcase = () => {
               <Image src={kickstart} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110' />
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>URL Shortner</h3>
+              <h3 className={`w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl ${manrope.className}`}>URL Shortner</h3>
             </div>
           </Link>
         </div>
@@ -55,7 +55,7 @@ const Showcase = () => {
               <Image src={codeforces} alt='leetcode' loading='lazy' className='transition-all duration-500 hover:scale-110' />
             </div>
             <div className=' mt-3 flex flex-col justify-between  gap-y-4 @lg:flex-row'>
-              <h3 className='w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl'>Leetcode</h3>
+              <h3 className={`w-fit text-light text-lg font-bold text-accent-300 2xl:text-3xl 3xl:text-3xl ${manrope.className}`}>Leetcode</h3>
             </div>
           </Link>
         </div>
