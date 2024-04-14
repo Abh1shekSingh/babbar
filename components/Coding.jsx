@@ -39,7 +39,7 @@ const Coding = () => {
               </h2>
             </div>
             <div >
-              <p className={`${manrope.className} tracking-loose text-xl md:text-4xl max-w-[44ch]`}>
+              <p className={`${manrope.className} tracking-loose text-2xl md:text-4xl max-w-[44ch]`}>
                 {
                   para.map((letter, index) => {
                     if(letter !== ' '){
