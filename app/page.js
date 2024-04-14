@@ -2,12 +2,12 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { useEffect } from "react";
-import Achievements from "@/components/Experience";
-import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 import Experience from "@/components/Experience";
 import Showcase from "@/components/Showcase";
 import About from "@/components/About";
+import Coding from "@/components/Coding";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect( () => {
@@ -34,11 +34,11 @@ export default function Home() {
           <Experience />  
           <About />
         </div>
-        <Footer />
-        <div className="mt-32 flex w-full flex-col px-6 sm:px-[4%] 3xl:px-[10%] justify-center items-center text-3xl">
-          <p>Get Sex Soon</p>
-        </div>
+        <Coding />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }
