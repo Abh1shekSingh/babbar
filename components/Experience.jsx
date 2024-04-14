@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -14,27 +15,50 @@ const manrope = Manrope({subsets: ['latin'], weight: '400'})
 const Experience = () => {
   const heading= [...("Experience.")]
 
-    // gsap.registerPlugin(ScrollTrigger)
-    // useGSAP(() => {
-    //     gsap.to('#achievements', {
-    //         scrollTrigger: {
-    //         trigger: '#achievements',
-    //         start: 'top center',
-    //         end: 'bottom center',
-    //         scrub: 1,
-    //         markers: true
-    //         },
-    //         scale:.5,
-    //         translateZ:10,
-    //     })
-    // }, [])
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from(".experience", {
+      y: 120,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'expo.out',
+      stagger: {
+        amount: 0.8
+      },
+      scrollTrigger: {
+        trigger: ".experience",
+        start: "top-=200px center",
+        end: "bottom+=200px center",
+        scrub: true,
+        once:true
+      }
+    })
+    gsap.from(".subheading", {
+      y: 120,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'expo.out',
+      stagger: {
+        amount: 0.8
+      },
+      scrollTrigger: {
+        trigger: ".subheading",
+        start: "top-=200px center",
+        end: "bottom+=200px center",
+        scrub: true,
+        once:true, 
+      }
+    })
+    
+
+  })
   return (
-    <section id='achievements' className='p-7 sm:p-24 z-2 bg-dark min-h-screen w-full'>
+    <section id='experience' className='p-7 sm:p-24 z-2 bg-dark min-h-screen w-full'>
         <div className='grid gap-x-32 grid-cols-1 md:grid-cols-12'>
           <h2 className={`sm:col-span-12 md:col-span-6 uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${poppins.className}`}>
-            <Animation word = {heading} className = "achievements" />
+            <Animation word = {heading} className = "experience" isScrollAnimation = "true" />
           </h2>
-          <p className={`sm:col-span-12 md:col-span-6 text-light text-lg xl:text-4xl opacity-80 ${manrope.className}`}>Here's my journey in the field of software engineering.</p>
+          <p className={`subheading sm:col-span-12 md:col-span-6 text-light text-lg xl:text-4xl opacity-80 ${manrope.className}`}>Here's my journey in the field of software engineering.</p>
         </div>
         <div className='mt-12 w-full'>
           <div className='mt-12 flex flex-col justify-between gap-y-16'>

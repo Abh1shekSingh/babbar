@@ -13,12 +13,32 @@ const Hero = () => {
   const author = [...("I'm Abhishek")]
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger)
+    gsap.from(".greet", {
+      y: 120,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'expo.out',
+      stagger: {
+        amount: 0.8
+      }
+    })
+    gsap.from(".author", {
+      y: 120,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'expo.out',
+      stagger: {
+        amount: 0.8
+      }
+    })
     gsap.from(".subtext", {
       y: 120,
       opacity: 0,
       duration: 1.5,
       ease: 'expo.out',
-    
+      stagger: {
+        amount: 0.8
+      }
     })
 
     gsap.to(".text_wrapper", {

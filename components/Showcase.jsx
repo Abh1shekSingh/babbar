@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Animation from './Animation'
 import Link from 'next/link'
@@ -5,12 +6,35 @@ import Image from 'next/image'
 import leetcode from '../public/images/Leetcode-babbar.png'
 import codeforces from "../public/images/Codeforce_babbar.png"
 import kickstart from "../public/images/kickstart_babbar.png"
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 import { Poppins, Manrope } from 'next/font/google'
 const poppins = Poppins({subsets: ['latin'], weight: ['700']})
 const manrope = Manrope({subsets: ['latin'], weight: '600'})
 
 const Showcase = () => {
   const work = [...("Showcase.")];
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.from(".work", {
+      y: 120,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'expo.out',
+      stagger: {
+        amount: 0.8
+      },
+      scrollTrigger: {
+        trigger: ".work",
+        start: "top-=200px center",
+        end: "bottom+=200px center",
+        scrub: true,
+        once:true
+      }
+    })
+  
+  })
   return (
     <section id='about' className='p-7 sm:p-24 w-full z-2 min-h-screen bg-dark rounded-t-3xl '>
       <div>

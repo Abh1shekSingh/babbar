@@ -13,12 +13,31 @@ const Coding = () => {
   const para = [...("Pellentesque egestas tortor ac risus scelerisque, in lacinia erat ullamcorper. Sed imperdiet est ut purus tincidunt viverra. Aliquam sit amet justo mauris. Fusce pellentesque aliquet magna id pulvinar. Praesent eget faucibus velit. ")]
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger)
+
+    gsap.from(".coding", {
+      y: 120,
+      opacity: 0,
+      duration: 1.5,
+      ease: 'expo.out',
+      stagger: {
+        amount: 0.8
+      },
+      scrollTrigger: {
+        trigger: ".coding",
+        start: "top-=200px center",
+        end: "bottom+=200px center",
+        scrub: true,
+        once:true
+      }
+    })
+
     gsap.from('#paraText', {
       scrollTrigger: {
         trigger: '#paraText',
         start: 'top center',
         end: 'bottom+=200px center',
-        scrub: 1
+        scrub: true, 
+        once:true
       },
       opacity: 0,
       duration: 1.5,
