@@ -46,9 +46,21 @@ const About = () => {
         },
         ease: "cubic-bezier(0.85, 0, 0.15, 1)",
       })
+    
+    gsap.to('#about', {
+      scrollTrigger: {
+        trigger: '#about',
+        start: 'center top+=200px',
+        end: 'bottom top+=200px',
+        scrub: true,
+      },
+      scale:0.95,
+      ease:'cubic-bezier(0.85, 0, 0.15, 1)'
+    
+    })
   })
   return (
-    <section id='about' className='p-7 sm:p-24 w-full bg-dark z-2 min-h-screen rounded-b-3xl'>
+    <section id='about' className='duration-300 transition-all p-7 sm:p-24 w-full bg-dark z-2 min-h-screen rounded-b-3xl'>
         <div className='relative'>
             <h2 className={`mix-blend-exclusion uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${sora.className}`}>
                 <Animation word={heading} className="about" />

@@ -36,7 +36,7 @@ const Showcase = () => {
   
   })
   return (
-    <section id='about' className='p-7 sm:p-24 w-full z-2 min-h-screen bg-dark rounded-t-3xl '>
+    <section id='showcase' className='p-7 sm:p-24 w-full z-2 min-h-screen bg-dark rounded-t-3xl '>
       <div>
         <h2 className={`uppercase text-[40px] sm:text-7xl  xs:text-4xl duration-500 text-light font-bold ${poppins.className}`}>
           <Animation word = {work} className = "work" />
