@@ -4,9 +4,9 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import Image from 'next/image'
-import digitalRegister from '../public/images/DR.jpg'
-import labs365 from '../public/images/365.jpg'
-import UC from "../public/images/UC.png"
+import digitalRegister from '../public/images/DR.webp'
+import labs365 from '../public/images/365.webp'
+import UC from "../public/images/UC.webp"
 import Animation from './Animation'
 import { Manrope, Poppins } from 'next/font/google'
 const poppins = Poppins({subsets: ['latin'], weight: ['700']})

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Manrope, Poppins } from 'next/font/google'
 import Image from 'next/image'
-import grid from "../public/images/sssplatter.svg"
+import grid from "../public/images/Circle.webp"
 const poppins = Poppins({subsets:['latin'], weight:['700']})
 const manrope = Manrope({subsets:['latin'], weight:'400'})
 const Footer = () => {

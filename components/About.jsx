@@ -3,7 +3,7 @@ import React from 'react'
 import Animation from './Animation'
 import { Manrope, Poppins } from 'next/font/google'
 import Image from 'next/image'
-import babbar from "../public/images/Babbar.png"
+import babbar from "../public/images/Babbar.webp"
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import gsap from 'gsap'

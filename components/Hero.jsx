@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import circleSVG from '../public/images/Circle.svg'
+import circleSVG from '../public/images/Circle.webp'
 import Animation from './Animation'
 import { Manrope, Montserrat, Roboto, Sora } from 'next/font/google'
 import gsap from 'gsap'

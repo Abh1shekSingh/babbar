@@ -2,7 +2,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import { useEffect } from "react";
-import Loader from "@/components/Loader";
 import Experience from "@/components/Experience";
 import Showcase from "@/components/Showcase";
 import About from "@/components/About";
@@ -23,7 +22,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <Loader /> */}
       <header>
         <Navbar />
       </header>
