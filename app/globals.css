@@ -23,3 +23,13 @@ body {
   margin-bottom:5.25em ;
 }
 
+
+@font-face {
+  font-family: 'Gilroy-black';
+  src: url('../fonts/Gilroy-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Gilroy-reg';
+  src: url('../fonts/Gilroy-Regular.ttf');
+}

@@ -40,7 +40,7 @@ const Navbar = () => {
         <div ref={ref}>
           <h2 className={`${whisper.className} text-dark text-3xl xl:text-7xl`}>babbar</h2>
         </div>
-        <div className={`text-dark flex  justify-end items-end gap-3 xl:gap-8 ${manrope.className}`}>
+        <div className='text-dark flex  justify-end items-end gap-3 xl:gap-8 font-[Gilroy-reg]'>
             <Link href='/' className='text-md sm:text-xl'>About</Link>
             <Link href='/' className='text-md sm:text-xl'>Experience</Link>
             <Link href='/' className='text-md sm:text-xl'>Socials</Link>
